@@ -4,7 +4,8 @@
   "description": "",
   "main": "Server.js",
   "scripts": {
-    "start": "nodemon Server.js",
+    "start": "node fileName.js",
+    "start:dev": "nodemon fileName.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
