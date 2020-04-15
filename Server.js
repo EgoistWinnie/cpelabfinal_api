@@ -2,8 +2,6 @@ require('dotenv').config()
 const express = require('express')
 const bodyparser = require('body-parser')
 
-
-
 const app = express()
 
 // middleware section
@@ -15,7 +13,7 @@ app.use(bodyparser.urlencoded({extended: true}))
 const Router = require('./Route')
 app.use(Router)
 
-const PORT = process.env.PORT
+const PORT = process.env.PORT || 5000
 const HOSTNAME = process.env.HOSTNAME
 app.listen(PORT,HOSTNAME, () => {
     console.log('Server is listening at:'+HOSTNAME+':'+PORT)
