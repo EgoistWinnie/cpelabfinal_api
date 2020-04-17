@@ -24,7 +24,7 @@ const Router = require('./Route')
 app.use(Router)
 
 const PORT = process.env.PORT || 5000
-const HOSTNAME = process.env.HOSTNAME || "localhost"
+const HOSTNAME = process.env.HOSTNAME
 app.listen(PORT,HOSTNAME, () => {
     console.log('Server is listening at:'+HOSTNAME+':'+PORT)
 })
